@@ -1,0 +1,44 @@
+[EN SU BRANCH]
+1.- git add *
+    -> Para agregar todos los cambios que han hecho al commit que haran
+
+2.- git status
+    -> Para que vean todo lo que se va a commitear(revisen que este todo en verde, 
+    si hay algo en rojo debe ser porque el archivo se elimino, sino me avisan :v)
+
+3.- git commit -m"Nombre del commit"
+    -> para crear su commit
+
+4.- git checkout master
+    -> para que se muevan al branch master
+
+[EN BRANCH MASTER]
+5.- git pull 
+    -> para descargar los cambios que otros hayan publicado
+    (si se les abre algun editor de texto solo escriban cualquier estupidez y guarden)
+
+6.- git merge [NOMBRE DE SU BRANCH]
+    -> para jalar los cambio de su branch, lo más probable es que les salga failed
+        o algo asi
+
+7.- git status
+    -> para que vean los archivos que necesita merge manual(los que aparecen en rojo (Both modified))
+    
+8.- (solo si les aparecen archivos en rojo ) Abren esos archivos en vs code y los corrigen
+    -> simpre den prioridad a mis cambios :v
+    -> si no saben que hacer lo comentan y me avisan
+
+9.- git add *
+
+10.- git commit -m"Nombre del commit merge"
+
+11.- git push
+
+12.- git branch -d [NOMBRE DE SU BRANCH]
+    -> para borrar su branch desactualizada
+
+13.- git branch [NOMBRE DE SU BRANCH]
+    -> para crear su branch denuevo con todo lo nuevo
+
+14.- git checkout [NOMBRE DE SU BRANCH]
+    -> con esto ya quedan en su branch para seguir webeando
