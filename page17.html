@@ -8,13 +8,13 @@
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:image:src" content="">
   <meta property="og:image" content="">
-  <meta name="twitter:title" content="simulación">
+  <meta name="twitter:title" content="Page 17">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/mbr-9.png" type="image/x-icon">
   <meta name="description" content="">
   
   
-  <title>simulación</title>
+  <title>Page 17</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -41,7 +41,7 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu2 cid-tlxcGWL2HI" once="menu" id="menu2-at">
+  <section data-bs-version="5.1" class="menu menu2 cid-tmbTYYrTfa" once="menu" id="menu2-az">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container-fluid">
@@ -72,7 +72,7 @@
     </nav>
 </section>
 
-<section data-bs-version="5.1" class="header1 cid-tlxcI6pByl" id="header1-au">
+<section data-bs-version="5.1" class="header1 cid-tmbU0e8hql" id="header1-b0">
 
     
 
@@ -81,7 +81,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Entregable 7</strong></h1>
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Entregable 8</strong></h1>
                 
                 
                 
@@ -90,7 +90,20 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="image3 cid-tlxcJXFyCu" id="image3-av">
+<section data-bs-version="5.1" class="content6 cid-tmbUbAtcSQ" id="content6-b3">
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <hr class="line">
+                <p class="mbr-text align-center mbr-fonts-style my-4 display-7"><strong>Diagramas de Flujo</strong></p>
+                <hr class="line">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tmbU2jCxnN" id="image3-b1">
     
 
     
@@ -98,9 +111,9 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
+            <div class="col-12 col-lg-7">
                 <div class="image-wrapper">
-                    <img src="assets/images/18262267-18ee-4043-b98b-2b61a7b6cdfd.jpeg" alt="Mobirise Website Builder">
+                    <img src="assets/images/2fa26519-b8e5-43fa-8e67-a0eaae84b29f.jpeg" alt="Mobirise Website Builder">
                     
                 </div>
             </div>
@@ -108,110 +121,36 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="content5 cid-tmbTrJdYIm" id="content5-ay">
+<section data-bs-version="5.1" class="content6 cid-tmbUxNEjpg" id="content6-b4">
     
-    <div class="container">
+    <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-12">
-                
-                
-                <p class="mbr-text mbr-fonts-style display-7">#include <servo.h>
-<br>//melodías a partir del starter de tinkercad 
-<br>
-<br>//melodía1: cuando obtiene una respuesta correcta 
-<br>#define NOTE_C4  262
-<br>#define NOTE_G3  196
-<br>#define NOTE_A3  220
-<br>#define NOTE_B3  247
-<br>
-<br>//melodía2: cuando obtiene una respuesta incorrecta 
-<br>#define NOTE_D3  146
-<br>#define NOTE_C3sost  140
-<br>#define NOTE_C3  130
-<br>#define NOTE_B2  120
-<br>
-<br>int melody[] = {
-<br>  NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
-<br>};
-<br> 
-<br>int melody2[] = {
-<br>  NOTE_D3, NOTE_C3sost, NOTE_C3, NOTE_B2
-<br>};
-<br>
-<br>int noteDurations[] = {
-<br>  4, 8, 8, 4, 4, 4, 4, 4
-<br>};
-<br>
-<br>int noteDurations2[] = {
-<br>  4, 4, 4, 2
-<br>};
-<br>//declaración de variables:
-<br>Servo motor_der; //servomotor del brazo derecho
-<br>Servo motor_izq; //servomotor del brazo izquierdo
-<br>char respuesta;
-<br>const int pinBuzzer = 6;  //Pin de salida de buzzer
-<br>int pos = 0;
-<br>
-<br>
-<br>void setup()
-<br>{
-<br> Serial.begin(9600);       
-<br> motor_der.attach(3);          //El servomotor al pin 3
-<br> motor_izq.attach(4);          //El servomotor al pin 4
-<br> pinMode(pinBuzzer, OUTPUT);   //Pin de salida para Buzzer
-<br>}
-<br>
-<br>void loop(){
-<br>  
-<br>  Serial.println("Ingrese 1 (correcta) o 0 (incorrecta)");
-<br>  respuesta = Serial.read();//lee si la respuesta era correcta o no
-<br>  if(respuesta == '1'){
-<br>    
-<br>    // se reproduce una melodía (tomado del starter de tinkercad):
-<br>    for (int thisNote = 0; thisNote &lt; 8; thisNote++) {
-<br>    int noteDuration = 1000 / noteDurations[thisNote];
-<br>    tone(6, melody[thisNote], noteDuration);
-<br>    int pauseBetweenNotes = noteDuration * 1.30;
-<br>    delay(pauseBetweenNotes);
-<br>    // stop the tone playing:
-<br>    noTone(6);
-<br>      
-<br>    }
-<br>    
-<br>    //los brazos se mueven arriba y abajo 1 vez (giro de 180° y de regreso):
-<br>    
-<br>      for (pos = 0; pos &lt;= 180; pos += 1) {
-<br>    	//girar 180°
-<br>    	motor_der.write(pos);
-<br>        motor_izq.write(pos);
-<br>     
-<br>    	delay(15); 
-<br>  		}
-<br> 	 for (pos = 180; pos &gt;= 0; pos -= 1) {
-<br>    	//regresar
-<br>   	 	motor_der.write(pos);
-<br>        motor_izq.write(pos);
-<br>     
-<br>   		delay(15); 
-<br>  		
-<br>     	}
-<br> 
-<br>  }
-<br>  if(respuesta == '0'){
-<br>   	for (int thisNote2 = 0; thisNote2 &lt; 5; thisNote2++) {
-<br>
-<br>    int noteDuration2 = 1000 / noteDurations2[thisNote2];
-<br>    tone(6, melody2[thisNote2], noteDuration2);
-<br> int pauseBetweenNotes2 = noteDuration2 * 1;
-<br>    delay(pauseBetweenNotes2);
-<br>    // stop the tone playing:
-<br>    noTone(6);
-<br> 	 }
-<br>  }</servo.h></p>
+            <div class="col-md-12 col-lg-9">
+                <hr class="line">
+                <p class="mbr-text align-center mbr-fonts-style my-4 display-7">ㅤ</p>
+                <hr class="line">
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2850802" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Created with &#8204;</p><a style="z-index:1" href="https://mobirise.com">Mobirise </a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section>
+
+<section data-bs-version="5.1" class="image3 cid-tmbU2ycL7w" id="image3-b2">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-11">
+                <div class="image-wrapper">
+                    <img src="assets/images/fad24de7-7ca1-40a3-9d87-c18d487474f4.jpeg" alt="Mobirise Website Builder">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2850802" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Made with Mobirise &#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Free Offline Site Creator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
   <input name="animation" type="hidden">
