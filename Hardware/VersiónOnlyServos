@@ -35,3 +35,4 @@ void loop() {
   if (Serial.available()) {      // si hay informacion disponible desde el monitor serial
     miBT.write(Serial.read());  // lee monitor serial y envia a Bluetooth
     motor1.write(180);}
+}
